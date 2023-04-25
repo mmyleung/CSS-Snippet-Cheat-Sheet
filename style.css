@@ -28,3 +28,38 @@ header {
     justify-content: center;
     align-items: center;
 }
+
+#cardGrid {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "flexbox-row flexbox-column css-grid"
+    "linear-gradients box-transition-glow overlay-title"
+    "linear-gradients box-transition-glow overlay-title";
+}
+
+#flexbox-row {
+    grid-area: flexbox-row;
+}
+
+#flexbox-column {
+    grid-area: flexbox-column;
+}
+
+#css-grid {
+    grid-area: css-grid;
+}
+
+#linear-gradients {
+    grid-area: linear-gradients;
+}
+
+#box-transition-glow {
+    grid-area: box-transition-glow;
+}
+
+#overlay-title {
+    grid-area: overlay-title;
+}
