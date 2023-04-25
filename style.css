@@ -134,5 +134,22 @@ body {
     "box-transition-glow overlay-title";
     margin: 20px;
 }
+}
 
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: larger;
+    }
+    #cardGrid {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "flexbox-row"
+        "flexbox-column"
+        "css-grid"
+        "linear-gradients" 
+        "box-transition-glow"
+        "overlay-title";
+        margin: 20px;
+    }
 }
