@@ -10,30 +10,30 @@
 <body>
     <header>
         <h1>CSS Snippet Cheatsheet</h1>
-        <p>Ever have trouble recalling the exact syntax for your favourite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for your to copy.</p>
+        <p>Ever have trouble recalling the exact syntax for your favourite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy.</p>
     </header>
     <div id="cardGrid">
-        <div class="code-card">
+        <div class="code-card" id="flexbox-row">
             <div class="card-header">
                 <h2>Flexbox Row</h2>
             </div>
             <div class="card-info">
-                Use these three properties to create a Flexbox row layout
+                Use these three properties to create a Flexbox row layout.
             </div>
             <div class="card-snippet">
                 <pre>
                     <code>
-                        .row {
-                            display: flex;
-                            flex-direction: row;
-                            flex-wrap: wrap;
-                        }
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
                     </code>
                 </pre>
             </div>
 
         </div>
-        <div class="code-card">
+        <div class="code-card" id="flexbox-column">
             <div class="card-header">
                 <h2>Flexbox Column</h2>
             </div>
@@ -43,16 +43,16 @@
             <div class="card-snippet">
                 <pre>
                     <code>
-                        .column {
-                            display: flex;
-                            flex-direction: column;
-                        }
+.column {
+    display: flex;
+    flex-direction: column;
+}
                     </code>
                 </pre>
             </div>
 
         </div>
-        <div class="code-card">
+        <div class="code-card" id="css-grid">
             <div class="card-header">
                 <h2>CSS Grid Layout</h2>
             </div>
@@ -62,17 +62,17 @@
             <div class="card-snippet">
                 <pre>
                     <code>
-                        .grid{
-                            display: grid;
-                            width: 100%;
-                            grid-template-columns: repeat (12, 1fr);
-                        }
+.grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat (12, 1fr);
+}
                     </code>
                 </pre>
             </div>
 
         </div>
-        <div class="code-card">
+        <div class="code-card" id="linear-gradients">
             <div class="card-header">
                 <h2>Linear Gradients</h2>
             </div>
@@ -82,18 +82,18 @@
             <div class="card-snippet">
                 <pre>
                     <code>
-                        .linear-gradient-background {
-                            background-image: linear-gradient (
-                                rgba(232, 102, 236, 0.3) 0%,
-                                rgba(232, 102, 236, 0.6) 100%
-                            );
-                        }
+.linear-gradient-background {
+    background-image: linear-gradient (
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%
+    );
+}
                     </code>
                 </pre>
             </div>
 
         </div>
-        <div class="code-card">
+        <div class="code-card" id="box-transition-glow">
             <div class="card-header">
                 <h2>Box Transition Glow</h2>
             </div>
@@ -103,23 +103,23 @@
             <div class="card-snippet">
                 <pre>
                     <code>
-                        .code-card .card-header {
-                            border-radius: 8px;
-                            transition: all 0.5s ease-in-out;
-                        }
+.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
 
-                        .code-card:hover, .code-card:hover .card-head {
-                            box-shadow: inset 0px 0px 8px 
-                            rgba(232, 102, 236, 1), 0 0 15px
-                            rgba(232, 102, 236, 1);
+.code-card:hover, .code-card:hover .card-head {
+    box-shadow: inset 0px 0px 8px 
+    rgba(232, 102, 236, 1), 0 0 15px
+    rgba(232, 102, 236, 1);
 
-                        }
+}
                     </code>
                 </pre>
             </div>
 
         </div>
-        <div class="code-card">
+        <div class="code-card" id="overlay-title">
             <div class="card-header">
                 <h2>Overlay Card with Title</h2>
             </div>
@@ -129,10 +129,10 @@
             <div class="card-snippet">
                 <pre>
                     <code>
-                        .card-header {
-                            position: relative;
-                            margin-top: -20px;
-                        }
+.card-header {
+    position: relative;
+    margin-top: -20px;
+}
                     </code>
                 </pre>
             </div>
@@ -141,10 +141,7 @@
     </div>
     
     <footer>
-        <div>
-            <h2>Made with and CSS</h2>
-        </div>
-
+            <h2>Made with ❤️ and CSS</h2>
     </footer>
 </body>
 </html>

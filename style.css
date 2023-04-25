@@ -9,6 +9,7 @@
 body{
     background-color: var(--dark);
     margin: 0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h1, h2, .card-info{
@@ -17,6 +18,9 @@ h1, h2, .card-info{
 
 header p {
     color: var(--border-color);
+    text-align: center;
+    width: 60%;
+    margin: 0 0 15px 0;
 }
 
 code{
@@ -37,6 +41,7 @@ header {
     grid-template-areas: 
     "flexbox-row flexbox-column css-grid"
     "linear-gradients box-transition-glow overlay-title";
+    margin: 20px;
 }
 
 #flexbox-row {
@@ -64,12 +69,48 @@ header {
 }
 
 .code-card {
-    margin: 15px;
-    border: 5px dashed var(--border-color);
+    margin: 30px 15px;
+    border: 2px dashed var(--border-color);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
 }
 
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 40px;
+}
+
+.card-header {
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius);
+    position: relative;
+    top: -40px;
+    z-index: 100;
+    background-color: var(--dark);
+    width: 90%;
+    text-align: left;
+    padding: 5px;
+}
+
+.card-snippet {
+    margin-top: 15px;
+    margin-bottom: 0;
+    max-width: 100%;
+    border-radius: var(--border-radius);
+    background-image: linear-gradient(
+        rgba(170, 174, 127, 0.3) 0%,
+        rgba(170, 174, 127, 0.6) 100%
+    );
+    flex-grow: 1;
+}
+
+h2 {
+    margin:0 auto;
+}
+
+.card-info {
+    text-align: justify;
 }
